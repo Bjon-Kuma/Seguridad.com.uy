@@ -28,4 +28,21 @@ $(document).ready(function(){
         autoplay:true,
     });
 
+
+    $(window).on('scroll load',function(){
+
+        if($(window).scrollTop() > 20){
+            $('#header').css({
+                'background':'#345B63',
+                'box-shadow':'0 .1rem .3rem #000'
+            });
+        }else{
+            $('#header').css({
+                'background':'#333',
+                'box-shadow':'none'
+            });
+        }
+
+    });
+
 });
